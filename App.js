@@ -36,7 +36,7 @@ app.post("/meeting", (req, res) => {
     },
   })
     .then((response) => {
-      console.log(response);
+      console.log(response.data);
       res.status(200).json(response.data);
     })
     .catch((error) => res.status(500).send(error));

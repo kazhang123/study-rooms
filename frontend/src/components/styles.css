@@ -1,0 +1,10 @@
+.meeting-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.meeting {
+  border: 1px;
+  border-style: solid;
+  margin: 10px;
+}

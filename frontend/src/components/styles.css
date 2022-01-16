@@ -1,5 +1,6 @@
 .meeting-list {
-  margin: auto;
+  margin-top: 28px;
+  margin-bottom: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -9,4 +10,35 @@
   margin: 10px;
   width: 200px;
   height: 300px;
+}
+
+.icon {
+  height: 11px;
+  margin-right: 5px;
+  margin-top: -1px;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-body {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.card {
+  /* border-color: #ffffff; */
+}
+
+.join-button {
+  transition: all 0.2s ease-in;
+  background: #be4f71;
+}
+
+.join-button:hover {
+  background: rgb(0, 140, 255);
 }

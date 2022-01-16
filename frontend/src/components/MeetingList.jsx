@@ -12,7 +12,7 @@ function MeetingList() {
     },
     {
       serverNum: 2,
-      title: "Quiet hours",
+      title: "Chill and chat",
       meetingId: 3269782558,
       password: "XhFRp6",
     },
@@ -23,8 +23,8 @@ function MeetingList() {
       password: "xSnT07",
     },
     {
-      serverNum: 3,
-      title: "Ambiance and music",
+      serverNum: 4,
+      title: "Quiet hours",
       meetingId: 4442116142,
       password: "544372",
     },

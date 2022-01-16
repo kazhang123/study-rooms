@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import greenCircle from "../assets/green-circle.png";
+import "./styles.css";
 
 declare var ZoomMtg;
 
@@ -74,7 +75,7 @@ function Meeting(props) {
         ZoomMtg.join({
           signature: signature,
           meetingNumber: meetingId,
-          userName: "John Lee",
+          userName: "Guest",
           apiKey: apiKey,
           //   userEmail: userEmail,
           passWord: password,
@@ -100,9 +101,18 @@ function Meeting(props) {
     <div className="meeting">
       <div className={"card"}>
         <div className={"card-body"}>
-          <h5 className={"card-title"}>{`Server ${serverNum}`}</h5>
+          <div className="icon-wrapper">
+            <span>
+              <img src={greenCircle} className="icon" />
+            </span>
+            <span>
+              <h5 className={"card-title"}>{`Server ${serverNum}`}</h5>
+            </span>
+          </div>
           <p className={"card-text"}>{title}</p>
-          <button onClick={getSignature}>Join</button>
+          <button className="join-button" onClick={getSignature}>
+            Join
+          </button>
         </div>
       </div>
     </div>

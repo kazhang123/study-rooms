@@ -30,13 +30,17 @@ function closeSidebar() {
 
 function Sidebar() {
   return (
-      <div className={"sidebar"} id={"sidebar"}>
-        <button className={"close-button"} onClick={closeSidebar}>Close</button>
-        <p>SHROOM is an online space created with the ZOOM api for students to study, collaborate, and socialize
-          inspired by the Gordon Shrum Lounge in the commons block of the first year residence Place Vanier, at UBC.
-        </p>
-      </div>
-  )
+    <div className={"sidebar"} id={"sidebar"}>
+      <button className={"close-button"} onClick={closeSidebar}>
+        Close
+      </button>
+      <p>
+        SHROOM is an online space created with the ZOOM API for students to
+        study, collaborate, and socialize. Inspired by the Gordon Shrum Lounge
+        in the commons block of the first year residence Place Vanier, at UBC.
+      </p>
+    </div>
+  );
 }
 
 function App() {
@@ -130,17 +134,21 @@ function App() {
           <h4>Virtual Study Space</h4>
         </div>
         <nav className={"nav"}>
-          <button className={"about-button"} onClick={openSidebar}>ABOUT</button>
+          <button className={"about-button"} onClick={openSidebar}>
+            ABOUT
+          </button>
         </nav>
       </header>
 
       <main id={"main"}>
-        <h1>Study Rooms</h1>
+        <h1 className="heading-1">Join a study room</h1>
+        <h1 className="heading-2">Study with others and get work done. </h1>
+        <h1 className="heading-3">All rooms open 24/7!</h1>
         {/* <CreateMeeting /> */}
         <MeetingList />
       </main>
 
-        <Sidebar />
+      <Sidebar />
 
       <footer className={"foot"}>
         Created by Katharine, Elizabeth & Bikram

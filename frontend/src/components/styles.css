@@ -6,7 +6,8 @@
 }
 
 .meeting {
-  margin: 10px;
+  justify-items: center;
+  padding: 5px 5px 5px 5px;
   width: 200px;
   height: 300px;
 }

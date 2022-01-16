@@ -1,5 +1,5 @@
-# Project Link
-https://kazhang123.github.io/study-rooms/
+# Try it out!
+Project link! https://kazhang123.github.io/study-rooms/
 
 # Getting Started with Create React App
 

@@ -98,9 +98,13 @@ function Meeting(props) {
 
   return (
     <div className="meeting">
-      <div>{`Server ${serverNum}`}</div>
-      <div>{title}</div>
-      <button onClick={getSignature}>Join</button>
+      <div className={"card"}>
+        <div className={"card-body"}>
+          <h5 className={"card-title"}>{`Server ${serverNum}`}</h5>
+          <p className={"card-text"}>{title}</p>
+          <button onClick={getSignature}>Join</button>
+        </div>
+      </div>
     </div>
   );
 }

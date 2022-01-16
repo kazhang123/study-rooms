@@ -6,7 +6,7 @@
 }
 
 .meeting {
-  border: 1px;
-  border-style: solid;
   margin: 10px;
+  width: 200px;
+  height: 300px;
 }

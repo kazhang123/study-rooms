@@ -1,10 +1,10 @@
 main {
-  width: 70%;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
 
-main button {
+.join-button {
   margin-top: 20px;
   background-color: #2d8cff;
   color: #ffffff;
@@ -17,7 +17,7 @@ main button {
   outline: none;
 }
 
-main button:hover {
+.join-button:hover {
   background-color: #2681f2;
 }
 
@@ -56,4 +56,33 @@ main button:hover {
   color: white;
   text-align: center;
   line-height: 30px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #404040;
+  overflow-x: hidden;
+  padding-top: 15px;
+  transition: 0.5s;
+  font-size: 12px;
+  text-justify: inter-word;
+}
+
+.sidebar p {
+  padding: 30px 25px 8px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.close-button {
+  padding-left: 15px;
+  color: lightgrey;
 }

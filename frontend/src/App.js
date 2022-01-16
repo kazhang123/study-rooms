@@ -150,9 +150,9 @@ function App() {
 
       <Sidebar />
 
-      <footer className={"foot"}>
+      {/* <footer className={"foot"}>
         Created by Katharine, Elizabeth & Bikram
-      </footer>
+      </footer> */}
     </div>
   );
 }

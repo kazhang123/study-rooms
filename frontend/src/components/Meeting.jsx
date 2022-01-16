@@ -13,7 +13,7 @@ ZoomMtg.i18n.reload("en-US");
 
 function Meeting(props) {
   // const [meetingId, setMeetingId] = useState(null);
-  const signatureEndpoint = "http://localhost:4000";
+  const signatureEndpoint = "https://zoom-sample-signature011621.herokuapp.com";
   const apiKey = "ylFH2WzbRXGkySuFN9Cnqg";
   const role = 0;
   const { serverNum, title, meetingId, password } = props;

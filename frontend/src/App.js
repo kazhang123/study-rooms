@@ -14,17 +14,14 @@ ZoomMtg.i18n.reload("en-US");
 
 function App() {
   // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
-  var signatureEndpoint = "http://localhost:4000";
-  var apiKey = "ylFH2WzbRXGkySuFN9Cnqg";
-  var meetingNumber = "71886084944";
-  var role = 1;
-  var leaveUrl = "http://localhost:3000"; // + ?meetingId=<meetingId>
-  var userName = "React";
-  var userEmail = "";
-  var passWord = "5njy5f";
-  const meetingIdEndpoint = "https://api.zoom.us/v2/users/me/meetings";
-  const JWTToken =
-    "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6InlsRkgyV3piUlhHa3lTdUZOOUNucWciLCJleHAiOjE2NDI4NzcyOTYsImlhdCI6MTY0MjI3MjQ5Nn0.GhI_rDwAEpUckV006m49s6Z-5oDg5EecmCcDVOpTORs";
+  const signatureEndpoint = "http://localhost:4000";
+  const apiKey = "ylFH2WzbRXGkySuFN9Cnqg";
+  const role = 1;
+  const leaveUrl = "http://localhost:3000"; // + ?meetingId=<meetingId>
+  const userName = "React";
+  const userEmail = "";
+  const meetingIdEndpoint = "http://localhost:4321/meeting";
+
   // pass in the registrant's token if your meeting or webinar requires registration. More info here:
   // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/meetings#join-registered
   // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/webinars#join-registered
@@ -37,26 +34,11 @@ function App() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${JWTToken}`,
-      },
-      body: {
-        topic: "something",
-        type: 1,
-        settings: {
-          host_video: true,
-          participant_video: true,
-          join_before_host: true,
-          mute_upon_entry: true,
-          approval_type: 2,
-          registration_type: 3,
-          auto_recording: "none",
-          enforce_login: false,
-          enforce_login_domains: false,
-        },
       },
     })
       .then((res) => res.json())
       .then((response) => {
+        console.log("hello");
         getSignature(response.id, response.password);
       })
       .catch((error) => {
@@ -65,8 +47,6 @@ function App() {
   }
 
   function getSignature(meetingId, password) {
-    // e.preventDefault();
-
     fetch(signatureEndpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -77,7 +57,7 @@ function App() {
     })
       .then((res) => res.json())
       .then((response) => {
-        startMeeting(response.signature, password);
+        startMeeting(response.signature, meetingId, password);
       })
       .catch((error) => {
         console.error(error);

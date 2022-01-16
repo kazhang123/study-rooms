@@ -1,8 +1,10 @@
-const https = require("https");
 const express = require("express");
 const axios = require("axios").default;
 const app = express();
+const cors = require("cors");
 const port = 4321;
+
+app.use(cors());
 
 app.post("/meeting", (req, res) => {
   const JWTToken =

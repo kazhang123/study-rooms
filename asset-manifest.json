@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/study-rooms/static/css/main.fe0f55c6.css",
-    "main.js": "/study-rooms/static/js/main.50f350c3.js",
+    "main.js": "/study-rooms/static/js/main.e2d53105.js",
     "static/js/787.667127bb.chunk.js": "/study-rooms/static/js/787.667127bb.chunk.js",
     "static/media/shrOOm-logo.png": "/study-rooms/static/media/shrOOm-logo.0817b11c0e9ec3f040b8.png",
     "static/media/green-circle.png": "/study-rooms/static/media/green-circle.e5b36e0548e4a1a185fb.png",
     "index.html": "/study-rooms/index.html",
     "main.fe0f55c6.css.map": "/study-rooms/static/css/main.fe0f55c6.css.map",
-    "main.50f350c3.js.map": "/study-rooms/static/js/main.50f350c3.js.map",
+    "main.e2d53105.js.map": "/study-rooms/static/js/main.e2d53105.js.map",
     "787.667127bb.chunk.js.map": "/study-rooms/static/js/787.667127bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe0f55c6.css",
-    "static/js/main.50f350c3.js"
+    "static/js/main.e2d53105.js"
   ]
 }

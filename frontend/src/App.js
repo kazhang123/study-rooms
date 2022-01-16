@@ -1,8 +1,10 @@
 import React from "react";
 
 import "./App.css";
+import Logo from "./assets/shrOOm-logo.png";
 
-declare var ZoomMtg;
+declare
+var ZoomMtg;
 
 ZoomMtg.setZoomJSLib("https://source.zoom.us/2.1.1/lib", "/av");
 
@@ -96,11 +98,26 @@ function App() {
 
   return (
     <div className="App">
+      <header className={"header"}>
+        <img className={"header-image"} src={Logo} alt={"SHROOM logo"} />
+        <div className={"header-text"}>
+          <h1 className={"app-title"}>SHROOM</h1>
+          <h4>Virtual Study Space</h4>
+        </div>
+        <nav className={"nav"}>
+          <h3>ABOUT</h3>
+        </nav>
+      </header>
+
       <main>
         <h1>Zoom Meeting SDK Sample React</h1>
 
         <button onClick={getMeetingId}>Join Meeting</button>
       </main>
+
+      <footer className={"foot"}>
+        Created by Katharine, Elizabeth & Bikram
+      </footer>
     </div>
   );
 }

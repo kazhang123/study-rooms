@@ -9,10 +9,7 @@ main button {
   background-color: #2d8cff;
   color: #ffffff;
   text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 10px 40px;
   display: inline-block;
   border-radius: 10px;
   cursor: pointer;
@@ -22,4 +19,41 @@ main button {
 
 main button:hover {
   background-color: #2681f2;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.header-text {
+  padding: 5px;
+}
+
+.header-image {
+  width: 130px;
+  padding: 20px;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.app-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 35px;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+  line-height: 30px;
 }

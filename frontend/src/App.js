@@ -18,6 +18,27 @@ declare var ZoomMtg;
 // ZoomMtg.i18n.load("en-US");
 // ZoomMtg.i18n.reload("en-US");
 
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openSidebar() {
+  document.getElementById("sidebar").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeSidebar() {
+  document.getElementById("sidebar").style.width = "0";
+}
+
+function Sidebar() {
+  return (
+      <div className={"sidebar"} id={"sidebar"}>
+        <button className={"close-button"} onClick={closeSidebar}>Close</button>
+        <p>SHROOM is an online space created with the ZOOM api for students to study, collaborate, and socialize
+          inspired by the Gordon Shrum Lounge in the commons block of the first year residence Place Vanier, at UBC.
+        </p>
+      </div>
+  )
+}
+
 function App() {
   // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
   // const signatureEndpoint = "http://localhost:4000";
@@ -109,15 +130,17 @@ function App() {
           <h4>Virtual Study Space</h4>
         </div>
         <nav className={"nav"}>
-          <h3>ABOUT</h3>
+          <button className={"about-button"} onClick={openSidebar}>ABOUT</button>
         </nav>
       </header>
 
-      <main>
+      <main id={"main"}>
         <h1>Study Rooms</h1>
 
         {/* <CreateMeeting /> */}
         <MeetingList />
+        <Sidebar />
+
       </main>
 
       <footer className={"foot"}>

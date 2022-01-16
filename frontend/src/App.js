@@ -136,12 +136,11 @@ function App() {
 
       <main id={"main"}>
         <h1>Study Rooms</h1>
-
         {/* <CreateMeeting /> */}
         <MeetingList />
-        <Sidebar />
-
       </main>
+
+        <Sidebar />
 
       <footer className={"foot"}>
         Created by Katharine, Elizabeth & Bikram

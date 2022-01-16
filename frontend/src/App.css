@@ -1,6 +1,5 @@
 main {
-  width: 70%;
-  margin: auto;
+  width: 100%;
   text-align: center;
 }
 
@@ -98,4 +97,8 @@ main button {
 .close-button {
   padding-left: 15px;
   color: lightgrey;
+}
+
+.about-button {
+  font-size: 20px;
 }

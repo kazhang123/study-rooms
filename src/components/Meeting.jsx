@@ -18,7 +18,8 @@ function Meeting(props) {
   const role = 0;
   const { serverNum, title, meetingId, password } = props;
   // const password = 249317;
-  const leaveUrl = "http://localhost:3000"; // + ?meetingId=<meetingId>
+  const leaveUrl =
+    "http://localhost:3000https://kazhang123.github.io/study-rooms"; // + ?meetingId=<meetingId>
   const userName = "React";
   const userEmail = Math.random();
   const meetingIdEndpoint = "http://localhost:4321/meeting";
